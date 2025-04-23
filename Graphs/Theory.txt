@@ -1,0 +1,44 @@
+                     | 🔍 Grafo de búsqueda                       | 🧱 Grafo de ordenamiento
+Objetivo             | Encontrar un nodo o camino específico      | Establecer un orden entre los nodos
+Tipo de recorrido    | DFS, BFS, Dijkstra, A*                     | Topological sort
+Ejemplos de uso      | Mapas, redes sociales, árboles de archivos | Dependencias (tareas, compilación, paquetes)
+Importa el destino?  | Sí (ej: encontrar un nodo o camino)        | No necesariamente: importa el orden de ejecución
+Pueden tener ciclos? | Sí (en búsqueda normal, salvo DFS acotado) | ❌ No (para ordenamiento deben ser acíclicos)
+
+
+🔍 Búsqueda en grafos:
+Se usa para navegar un grafo y buscar un nodo específico o una conexión entre nodos.
+
+Ejemplo:
+
+    Google Maps → encontrar la ruta más corta
+
+    ¿Existe conexión entre usuario A y B?
+
+Algoritmos comunes:
+
+    BFS (amplitud)
+
+    DFS (profundidad)
+
+    Dijkstra, A* (si hay pesos)
+
+
+🧱 Ordenamiento en grafos (Topological Sort)
+Se usa cuando hay dependencias.
+
+Ejemplo clásico:
+
+    A → B → C
+    ↑         ↓
+    D → E → F
+
+    A tiene que ejecutarse antes que B
+
+    D antes que E
+
+    C no puede comenzar hasta que B y E estén listos
+
+✅ Resumen en una línea:
+🔍 Grafo de búsqueda: quiero llegar a un nodo
+🧱 Grafo de ordenamiento: quiero saber en qué orden visitar todos los nodos
