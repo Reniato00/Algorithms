@@ -25,6 +25,8 @@ function findIndices(array, target)
     return []
 }
 
+console.log(findIndices(array, target)); 
+/////////////////////////////////////////////////////////////////////////////////////
 function SearchIndices(array, target)
 {
     const saved = {}; // Remember that Hasmap is a Dictionary object in JS
@@ -45,8 +47,4 @@ function SearchIndices(array, target)
     return [];
 }
 
-const result = findIndices(array, target);
-const otherResult = SearchIndices(array, target);
-
-console.log(result); 
-console.log(otherResult);
+console.log(SearchIndices(array, target));
