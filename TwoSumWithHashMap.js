@@ -27,18 +27,19 @@ function findIndices(array, target)
 
 function SearchIndices(array, target)
 {
-    const saved = {};
+    const saved = {}; // Remember that Hasmap is a Dictionary object in JS
 
     array.forEach((element,index) => {
         const currentValue = element;
         const difference = target - currentValue;
 
-        if(saved[difference] !== undefined)
+        if(saved[difference] !== undefined) // thats mean that will be search the difference in the dictionary
         {
             return [saved[difference], index]; //Thats return will be invoked when the difference is found in the Hasmap object 
         }
 
-        saved[currentValue] = index;
+        saved[currentValue] = index; // If dont find any, will add the current value like KEY and the index like VALUE
+        //Example {1:0, 6:1, 4:2, 9:3}
     });
 
     return [];
